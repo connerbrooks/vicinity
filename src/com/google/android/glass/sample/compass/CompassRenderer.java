@@ -91,6 +91,7 @@ public class CompassRenderer implements SurfaceHolder.Callback {
             Location location = orientationManager.getLocation();
             List<Place> places = mLandmarks.getNearbyLandmarks(
                     location.getLatitude(), location.getLongitude());
+
             mCompassView.setNearbyPlaces(places);
         }
 
