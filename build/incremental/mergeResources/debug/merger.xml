@@ -58,9 +58,9 @@
                 </string>
                 <string name="pitch_too_steep" >Keep Glass horizontal to use the compass
                 </string>
-                <string name="app_name" >Compass Sample
+                <string name="app_name" >Vicinity
                 </string>
-                <string name="show_compass_voice_trigger" >show a compass
+                <string name="show_compass_voice_trigger" >whats around me?
                 </string>
                 <string name="stop" >Stop
                 </string>

@@ -17,8 +17,8 @@
 <resources>
 
     <!-- Launch-related strings. -->
-    <string name="app_name">Compass Sample</string>
-    <string name="show_compass_voice_trigger">show a compass</string>
+    <string name="app_name">Vicinity</string>
+    <string name="show_compass_voice_trigger">whats around me?</string>
 
     <!-- Strings describing locations. -->
     <string-array name="direction_abbreviations">

@@ -47,12 +47,12 @@
     <!-- From: file:/home/conner/workspace/Vicinity/res/values/strings.xml -->
     <eat-comment />
 
-    <string name="app_name">Compass Sample</string>
+    <string name="app_name">Vicinity</string>
     <string name="magnetic_interference">Glass is detecting too much interference</string>
     <string name="pitch_too_steep">Keep Glass horizontal to use the compass</string>
     <string name="place_text_format">%1$s (%2$s km)</string>
     <string name="read_aloud">Read aloud</string>
-    <string name="show_compass_voice_trigger">show a compass</string>
+    <string name="show_compass_voice_trigger">whats around me?</string>
     <string name="spoken_heading_format">%1$d degrees %2$s</string>
     <string name="spoken_heading_format_one">%1$d degree %2$s</string>
     <string name="stop">Stop</string>

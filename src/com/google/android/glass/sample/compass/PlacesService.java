@@ -27,6 +27,7 @@ public class PlacesService {
         return mNearbyPlaces;
     }
 
+    /*
     public void getPlacesJSON(double lat, double lng){
 
         double lat;
@@ -43,4 +44,5 @@ public class PlacesService {
             }
         });
     }
+    */
 }

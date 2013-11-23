@@ -1,13 +1,13 @@
 # incremental data. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
-1385167059000 547 436db979776739301f9b577f549a3ea2ed0448fd /home/conner/workspace/Vicinity/build/res/all/debug/drawable-hdpi/place_mark.png
-1385167059000 1478 95c799aff04f37d9b21136340800dca1d233e7e7 /home/conner/workspace/Vicinity/build/res/all/debug/drawable-hdpi/gradient50.png
-1385167059000 2506 80010b7598d9639727faefddebc6faddae83c7f7 /home/conner/workspace/Vicinity/build/res/all/debug/values/values.xml
-1385167059000 973 8208d9c9a275c835f0b577e2c2457884a7bb5248 /home/conner/workspace/Vicinity/build/res/all/debug/drawable-hdpi/ic_read_aloud.png
-1385167059000 303 2831912ace8eb94a6d044111443f09f84d8a3cb3 /home/conner/workspace/Vicinity/build/res/all/debug/raw/landmarks.json
-1385167059000 599 47699468dedd281f3643f7843f939d51ba71e62e /home/conner/workspace/Vicinity/build/res/all/debug/drawable-hdpi/ic_stop.png
-1385167059000 803 b178718b41459d45edff305b63245e2aa37966eb /home/conner/workspace/Vicinity/build/res/all/debug/xml/compass_show.xml
-1385167059000 1851 fec79cc88e786b6807d383b6400fa13afef1491e /home/conner/workspace/Vicinity/build/res/all/debug/drawable-hdpi/ic_compass.png
-1385167059000 1077 986ce30df93c7b8c165a82b8aeb866262987414f /home/conner/workspace/Vicinity/build/res/all/debug/menu/compass.xml
-1385167059000 1864 9c489b285ea829fa1709bd7dffae4fb31417ef5d /home/conner/workspace/Vicinity/build/res/all/debug/layout/compass.xml
+1385172878000 547 436db979776739301f9b577f549a3ea2ed0448fd /home/conner/workspace/Vicinity/build/res/all/debug/drawable-hdpi/place_mark.png
+1385172878000 1478 95c799aff04f37d9b21136340800dca1d233e7e7 /home/conner/workspace/Vicinity/build/res/all/debug/drawable-hdpi/gradient50.png
+1385172878000 2502 7c315f14774c2180b086997b855acdb1595f0ab2 /home/conner/workspace/Vicinity/build/res/all/debug/values/values.xml
+1385172878000 973 8208d9c9a275c835f0b577e2c2457884a7bb5248 /home/conner/workspace/Vicinity/build/res/all/debug/drawable-hdpi/ic_read_aloud.png
+1385172878000 303 2831912ace8eb94a6d044111443f09f84d8a3cb3 /home/conner/workspace/Vicinity/build/res/all/debug/raw/landmarks.json
+1385172878000 599 47699468dedd281f3643f7843f939d51ba71e62e /home/conner/workspace/Vicinity/build/res/all/debug/drawable-hdpi/ic_stop.png
+1385172878000 803 b178718b41459d45edff305b63245e2aa37966eb /home/conner/workspace/Vicinity/build/res/all/debug/xml/compass_show.xml
+1385172878000 1851 fec79cc88e786b6807d383b6400fa13afef1491e /home/conner/workspace/Vicinity/build/res/all/debug/drawable-hdpi/ic_compass.png
+1385172878000 1077 986ce30df93c7b8c165a82b8aeb866262987414f /home/conner/workspace/Vicinity/build/res/all/debug/menu/compass.xml
+1385172878000 1864 9c489b285ea829fa1709bd7dffae4fb31417ef5d /home/conner/workspace/Vicinity/build/res/all/debug/layout/compass.xml

@@ -17,7 +17,11 @@
 package com.google.android.glass.sample.compass.model;
 
 import com.google.android.glass.sample.compass.R;
+import com.google.android.glass.sample.compass.RestClient;
+import com.google.android.glass.sample.compass.placemodel.PlaceList;
 import com.google.android.glass.sample.compass.util.MathUtils;
+import com.google.gson.Gson;
+import com.loopj.android.http.JsonHttpResponseHandler;
 
 import android.content.Context;
 import android.util.Log;
@@ -50,6 +54,10 @@ public class Landmarks {
      * The list of landmarks loaded from resources.
      */
     private final ArrayList<Place> mPlaces;
+
+    private String mPlacesJSON;
+
+    private PlaceList placeList;
 
     /**
      * Initializes a new {@code Landmarks} object by loading the landmarks from the resource
@@ -154,4 +162,49 @@ public class Landmarks {
 
         return buffer.toString();
     }
+
+
+    public void getPlacesJSON(double lat, double lng){
+
+        //&types=food  &name=harbour
+        RestClient.get("location=" + lat + "," + lng + "&radius=500&sensor=true&key=AIzaSyB7ZcaAbyw33ZGWy4P-2K3_fhhUimPA9uc", null, new JsonHttpResponseHandler() {
+
+            @Override
+            public void onSuccess(JSONObject itemObject) {
+                mPlacesJSON = itemObject.toString();
+                //Parses JSON String with GSON
+                parsePlacesList(mPlacesJSON);
+
+            }
+        });
+    }
+
+    public void parsePlacesList(String mJSONPlaces){
+        try{
+            Gson gson = new Gson();
+            placeList = gson.fromJson(mJSONPlaces, PlaceList.class);
+            addToPlaceList();
+
+        }catch(Exception e){
+
+        }
+
+    }
+
+    public void addToPlaceList(){
+
+        if (placeList != null) {
+            for (int i = 0; i < placeList.results.size(); i++) {
+                String name = placeList.results.get(i).name;
+                double lat = placeList.results.get(i).geometry.location.lat;
+                double lng = placeList.results.get(i).geometry.location.lng;
+                Place p = new Place(lat,lng, name);
+                if (p != null) {
+                    mPlaces.add(p);
+                }
+            }
+        }
+    }
+
+
 }
