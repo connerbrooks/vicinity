@@ -52,7 +52,7 @@ public class CompassView extends View {
     /** Various dimensions and other drawing-related constants. */
     private static final float NEEDLE_WIDTH = 6;
     private static final float NEEDLE_HEIGHT = 125;
-    private static final int NEEDLE_COLOR = Color.RED;
+    private static final int NEEDLE_COLOR = Color.BLUE;
     private static final float TICK_WIDTH = 2;
     private static final float TICK_HEIGHT = 10;
     private static final float DIRECTION_TEXT_HEIGHT = 84.0f;
