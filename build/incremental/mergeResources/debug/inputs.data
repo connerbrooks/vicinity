@@ -1,0 +1,15 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1384900057000 1005 99ffda895ee1a52a7f1777fba0411b8fc1ffcc80 /home/conner/workspace/Vicinity/res/menu/compass.xml
+1384900057000 741 b4b45a1340fbbaa9e852c697d4507fbd27284c8e /home/conner/workspace/Vicinity/res/values/dimens.xml
+1384900057000 1790 09f0ecfea25c2a019a2600ed70ca89ad9d96565e /home/conner/workspace/Vicinity/res/layout/compass.xml
+1384900057000 303 2831912ace8eb94a6d044111443f09f84d8a3cb3 /home/conner/workspace/Vicinity/res/raw/landmarks.json
+1384900057000 1051 4dac481301676a602876176a44ebdd2851b66d07 /home/conner/workspace/Vicinity/res/values/styles.xml
+1384900057000 633 78a28cb02134703ffd97a2b78fcff2dd59f39439 /home/conner/workspace/Vicinity/res/drawable-hdpi/ic_stop.png
+1384900057000 945 419cc7100078722ab392d84ab214496a00133772 /home/conner/workspace/Vicinity/res/drawable-hdpi/place_mark.png
+1384900057000 2516 d9cb43fc33834152bfdcdcd279e37dd877d6d1e1 /home/conner/workspace/Vicinity/res/values/strings.xml
+1384900057000 2373 639fba5a469c8274794864f5085aaf741e5ecdd6 /home/conner/workspace/Vicinity/res/drawable-hdpi/gradient50.png
+1384900057000 3583 df86753a81ad4a9821f7c06f3a3da8704ec8a25c /home/conner/workspace/Vicinity/res/drawable-hdpi/ic_compass.png
+1384900057000 727 9723e91a28b9f8e9ebea41f321e9a48b1970d9b5 /home/conner/workspace/Vicinity/res/xml/compass_show.xml
+1384900057000 1025 8e6bf2e135dae05a7eac21b5e1b907b9ba16b967 /home/conner/workspace/Vicinity/res/drawable-hdpi/ic_read_aloud.png

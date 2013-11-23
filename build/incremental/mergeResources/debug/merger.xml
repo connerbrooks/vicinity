@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/home/conner/workspace/Vicinity/res" >
+            <file
+                name="compass"
+                path="/home/conner/workspace/Vicinity/res/layout/compass.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="landmarks"
+                path="/home/conner/workspace/Vicinity/res/raw/landmarks.json"
+                qualifiers=""
+                type="raw" />
+            <file
+                name="compass"
+                path="/home/conner/workspace/Vicinity/res/menu/compass.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="ic_compass"
+                path="/home/conner/workspace/Vicinity/res/drawable-hdpi/ic_compass.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_read_aloud"
+                path="/home/conner/workspace/Vicinity/res/drawable-hdpi/ic_read_aloud.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="place_mark"
+                path="/home/conner/workspace/Vicinity/res/drawable-hdpi/place_mark.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="gradient50"
+                path="/home/conner/workspace/Vicinity/res/drawable-hdpi/gradient50.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                name="ic_stop"
+                path="/home/conner/workspace/Vicinity/res/drawable-hdpi/ic_stop.png"
+                qualifiers="hdpi"
+                type="drawable" />
+            <file
+                path="/home/conner/workspace/Vicinity/res/values/dimens.xml"
+                qualifiers="" >
+                <dimen name="card_margin" >40px
+                </dimen>
+            </file>
+            <file
+                path="/home/conner/workspace/Vicinity/res/values/strings.xml"
+                qualifiers="" >
+                <string name="spoken_heading_format" >%1$d degrees %2$s
+                </string>
+                <string name="magnetic_interference" >Glass is detecting too much interference
+                </string>
+                <string name="pitch_too_steep" >Keep Glass horizontal to use the compass
+                </string>
+                <string name="app_name" >Compass Sample
+                </string>
+                <string name="show_compass_voice_trigger" >show a compass
+                </string>
+                <string name="stop" >Stop
+                </string>
+                <string name="read_aloud" >Read aloud
+                </string>
+                <string name="place_text_format" >%1$s (%2$s km)
+                </string>
+                <string name="spoken_heading_format_one" >%1$d degree %2$s
+                </string>
+
+                <string-array name="spoken_directions" >
+                    <item>
+north
+                    </item>
+                    <item>
+north north east
+                    </item>
+                    <item>
+north east
+                    </item>
+                    <item>
+east north east
+                    </item>
+                    <item>
+east
+                    </item>
+                    <item>
+east south east
+                    </item>
+                    <item>
+south east
+                    </item>
+                    <item>
+south south east
+                    </item>
+                    <item>
+south
+                    </item>
+                    <item>
+south south west
+                    </item>
+                    <item>
+south west
+                    </item>
+                    <item>
+west south west
+                    </item>
+                    <item>
+west
+                    </item>
+                    <item>
+west north west
+                    </item>
+                    <item>
+north west
+                    </item>
+                    <item>
+north north west
+                    </item>
+                </string-array>
+                <string-array name="direction_abbreviations" >
+                    <item>
+N
+                    </item>
+                    <item>
+NNE
+                    </item>
+                    <item>
+NE
+                    </item>
+                    <item>
+ENE
+                    </item>
+                    <item>
+E
+                    </item>
+                    <item>
+ESE
+                    </item>
+                    <item>
+SE
+                    </item>
+                    <item>
+SSE
+                    </item>
+                    <item>
+S
+                    </item>
+                    <item>
+SSW
+                    </item>
+                    <item>
+SW
+                    </item>
+                    <item>
+WSW
+                    </item>
+                    <item>
+W
+                    </item>
+                    <item>
+WNW
+                    </item>
+                    <item>
+NW
+                    </item>
+                    <item>
+NNW
+                    </item>
+                </string-array>
+            </file>
+            <file
+                path="/home/conner/workspace/Vicinity/res/values/styles.xml"
+                qualifiers="" >
+
+                <style
+                    name="MenuTheme"
+                    parent="@android:style/Theme.DeviceDefault" >
+                    <item name="android:windowBackground">
+@android:color/transparent
+                    </item>
+                    <item name="android:colorBackgroundCacheHint">
+@null
+                    </item>
+                    <item name="android:windowIsTranslucent">
+true
+                    </item>
+                    <item name="android:windowAnimationStyle">
+@null
+                    </item>
+                </style>
+            </file>
+            <file
+                name="compass_show"
+                path="/home/conner/workspace/Vicinity/res/xml/compass_show.xml"
+                qualifiers=""
+                type="xml" />
+        </source>
+        <source path="/home/conner/workspace/Vicinity/build/res/rs/debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/conner/workspace/Vicinity/build-types/debug/res" />
+    </dataSet>
+
+</merger>

@@ -1,0 +1,11 @@
+# incremental data. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1384900057000 4659 01d33527cbe886738f9f0e51daefc2d459d22abb /home/conner/workspace/Vicinity/src/com/google/android/glass/sample/compass/util/MathUtils.java
+1384900057000 3311 ca818a4d71b26a5ca3758e3a2362d9fde9c31535 /home/conner/workspace/Vicinity/src/com/google/android/glass/sample/compass/CompassMenuActivity.java
+1384900057000 5582 8c676822b61635a81b164d362da73d6786135b27 /home/conner/workspace/Vicinity/src/com/google/android/glass/sample/compass/model/Landmarks.java
+1384900057000 12380 ca4bc504a0cc7d39875934b4c97bbc26527ad5ce /home/conner/workspace/Vicinity/src/com/google/android/glass/sample/compass/OrientationManager.java
+1384900057000 9073 4312fa815d5ac31626e53343a8eb35484d5d62c1 /home/conner/workspace/Vicinity/src/com/google/android/glass/sample/compass/CompassRenderer.java
+1384900057000 18492 5d8b09e45c681235fe817b5a9e9df92446c320db /home/conner/workspace/Vicinity/src/com/google/android/glass/sample/compass/CompassView.java
+1384900057000 5227 a55908aefba9b965e9f776f4bff895bf20b176bb /home/conner/workspace/Vicinity/src/com/google/android/glass/sample/compass/CompassService.java
+1384900057000 1855 81f3efca4ed3505ac06a1b09982f97e51533177b /home/conner/workspace/Vicinity/src/com/google/android/glass/sample/compass/model/Place.java
