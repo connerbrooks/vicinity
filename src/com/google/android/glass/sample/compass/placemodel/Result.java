@@ -1,7 +1,5 @@
 package com.google.android.glass.sample.compass.placemodel;
 
-import com.google.android.glass.sample.compass.model.Geometry;
-
 /**
  * Created by conner on 11/22/13.
  */

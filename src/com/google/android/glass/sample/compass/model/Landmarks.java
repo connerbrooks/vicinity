@@ -35,6 +35,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -53,7 +54,9 @@ public class Landmarks {
     /**
      * The list of landmarks loaded from resources.
      */
-    private final ArrayList<Place> mPlaces;
+    private ArrayList<Place> mPlaces;
+
+    //private HashSet<Place> mPlaces;
 
     private String mPlacesJSON;
 
@@ -73,6 +76,7 @@ public class Landmarks {
         // we may want to load it in the background instead.
         String jsonString = readLandmarksResource(context);
         populatePlaceList(jsonString);
+
     }
 
     /**
@@ -167,6 +171,8 @@ public class Landmarks {
     public void getPlacesJSON(double lat, double lng){
 
         //&types=food  &name=harbour
+
+
         RestClient.get("location=" + lat + "," + lng + "&radius=500&sensor=true&key=AIzaSyB7ZcaAbyw33ZGWy4P-2K3_fhhUimPA9uc", null, new JsonHttpResponseHandler() {
 
             @Override
@@ -184,7 +190,6 @@ public class Landmarks {
             Gson gson = new Gson();
             placeList = gson.fromJson(mJSONPlaces, PlaceList.class);
             addToPlaceList();
-
         }catch(Exception e){
 
         }
@@ -199,11 +204,13 @@ public class Landmarks {
                 double lat = placeList.results.get(i).geometry.location.lat;
                 double lng = placeList.results.get(i).geometry.location.lng;
                 Place p = new Place(lat,lng, name);
-                if (p != null) {
-                    mPlaces.add(p);
-                }
+                mPlaces.add(p);
             }
         }
+    }
+
+    public void clearPlaceList(){
+        mPlaces.clear();
     }
 
 
