@@ -62,6 +62,8 @@ public class Landmarks {
 
     private PlaceList placeList;
 
+    private boolean isDone = false;
+
     /**
      * Initializes a new {@code Landmarks} object by loading the landmarks from the resource
      * bundle.
@@ -85,6 +87,13 @@ public class Landmarks {
      * empty list will be returned.
      */
     public List<Place> getNearbyLandmarks(double latitude, double longitude) {
+        getPlacesJSON(latitude, longitude);
+        for(int i=0; i<mPlaces.size(); i++){
+            Log.wtf("Please God", mPlaces.get(i).getName());
+        }
+        while(!isDone){
+
+        }
         ArrayList<Place> nearbyPlaces = new ArrayList<Place>();
 
         for (Place knownPlace : mPlaces) {
@@ -169,10 +178,7 @@ public class Landmarks {
 
 
     public void getPlacesJSON(double lat, double lng){
-
         //&types=food  &name=harbour
-
-
         RestClient.get("location=" + lat + "," + lng + "&radius=500&sensor=true&key=AIzaSyB7ZcaAbyw33ZGWy4P-2K3_fhhUimPA9uc", null, new JsonHttpResponseHandler() {
 
             @Override
@@ -201,12 +207,15 @@ public class Landmarks {
         if (placeList != null) {
             for (int i = 0; i < placeList.results.size(); i++) {
                 String name = placeList.results.get(i).name;
+                Log.wtf("Add Place", name);
                 double lat = placeList.results.get(i).geometry.location.lat;
                 double lng = placeList.results.get(i).geometry.location.lng;
                 Place p = new Place(lat,lng, name);
                 mPlaces.add(p);
+
             }
         }
+        isDone = true;
     }
 
     public void clearPlaceList(){
