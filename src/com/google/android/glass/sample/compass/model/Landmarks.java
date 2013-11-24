@@ -88,9 +88,7 @@ public class Landmarks {
      */
     public List<Place> getNearbyLandmarks(double latitude, double longitude) {
         getPlacesJSON(latitude, longitude);
-        for(int i=0; i<mPlaces.size(); i++){
-            Log.wtf("Please God", mPlaces.get(i).getName());
-        }
+        //wait for async task TODO dont do it like this
         while(!isDone){
 
         }
@@ -102,7 +100,7 @@ public class Landmarks {
                 nearbyPlaces.add(knownPlace);
             }
         }
-
+        isDone = false;
         return nearbyPlaces;
     }
 

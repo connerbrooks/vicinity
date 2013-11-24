@@ -39,6 +39,10 @@ public class Place {
         mName = name;
     }
 
+    public Place(double latitude, double longitude, String name, String icon, ){
+
+    }
+
     /**
      * Gets the latitude of the place.
      *
