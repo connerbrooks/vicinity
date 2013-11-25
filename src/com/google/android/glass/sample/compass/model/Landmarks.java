@@ -35,7 +35,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -56,12 +55,19 @@ public class Landmarks {
      */
     private ArrayList<Place> mPlaces;
 
-    //private HashSet<Place> mPlaces;
-
+    /**
+     * The json string for the places api cal
+     */
     private String mPlacesJSON;
 
+    /**
+     * PlaceList model to parse json with gson
+     */
     private PlaceList placeList;
 
+    /**
+     * flag to check and wait for async task to finish
+     */
     private boolean isDone = false;
 
     /**
@@ -174,7 +180,13 @@ public class Landmarks {
         return buffer.toString();
     }
 
-
+    /**
+     * HTTP request to Google Places API.
+     * Calls GSON parse.
+     *
+     * @param lat latitude of current location
+     * @param lng longitude of current location
+     */
     public void getPlacesJSON(double lat, double lng){
         //&types=food  &name=harbour
         RestClient.get("location=" + lat + "," + lng + "&radius=500&sensor=true&key=AIzaSyB7ZcaAbyw33ZGWy4P-2K3_fhhUimPA9uc", null, new JsonHttpResponseHandler() {
@@ -189,6 +201,12 @@ public class Landmarks {
         });
     }
 
+    /**
+     * Parses JSON with GSON using models in {placemodel/}
+     *
+     * @param mJSONPlaces json string from http request
+     */
+
     public void parsePlacesList(String mJSONPlaces){
         try{
             Gson gson = new Gson();
@@ -199,6 +217,10 @@ public class Landmarks {
         }
 
     }
+
+    /**
+     * Adds the parsed places to mPlaces
+     */
 
     public void addToPlaceList(){
 
@@ -216,6 +238,10 @@ public class Landmarks {
         isDone = true;
     }
 
+    /**
+     * Removes all Places in mPlaces
+     * Called onLocationChanged
+     */
     public void clearPlaceList(){
         mPlaces.clear();
     }

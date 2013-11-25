@@ -90,11 +90,9 @@ public class CompassRenderer implements SurfaceHolder.Callback {
         public void onLocationChanged(OrientationManager orientationManager) {
             Location location = orientationManager.getLocation();
             mLandmarks.clearPlaceList();
-            //mLandmarks.getPlacesJSON(location.getLatitude(), location.getLongitude());
             List<Place> places = mLandmarks.getNearbyLandmarks(
                     location.getLatitude(), location.getLongitude());
             mCompassView.setNearbyPlaces(places);
-            Log.wtf("Location Change", "great");
         }
 
         @Override

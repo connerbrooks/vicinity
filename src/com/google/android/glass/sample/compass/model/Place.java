@@ -25,6 +25,11 @@ public class Place {
     private final double mLatitude;
     private final double mLongitude;
     private final String mName;
+    private String mIcon;
+    private String[] mTypes;
+    private boolean mOpenNow;
+    private double mRating;
+    private String mVicinity;
 
     /**
      * Initializes a new place with the specified coordinates and name.
@@ -39,7 +44,15 @@ public class Place {
         mName = name;
     }
 
-    public Place(double latitude, double longitude, String name, String icon, ){
+    public Place(double latitude, double longitude, String name, String icon, String[] types, boolean openNow, double rating, String vicinity){
+        mLatitude = latitude;
+        mLongitude = longitude;
+        mName = name;
+        mIcon = icon;
+        mTypes = types;
+        mOpenNow = openNow;
+        mRating = rating;
+        mVicinity = vicinity;
 
     }
 
